@@ -1,0 +1,89 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+body {
+    margin:auto;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 32pt;
+}
+
+h3 {
+    font-size: 16pt;
+}
+
+p {
+    font-size: 14pt;
+}
+
+img {
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+    display: block;
+}
+
+.navbar {
+    border: none;
+    background: linear-gradient(to right, #B3E5EE, #FFF);
+    font-size: 24pt;
+    font-family: 'Amatic SC', cursive;
+}
+
+.navbar-default .navbar-brand {
+    font-family: 'Tangerine';
+    font-size: 36pt;
+    color: #000;
+}
+
+iframe {
+    margin:auto;
+}
+
+.home-logo {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.logo {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    max-width: 300px;
+}
+.logo-negative {
+    filter: invert(100%);
+}
+
+.yield {
+    padding-top: 50px;
+    
+}
+
+/* body {
+    background-image: url("https://lh3.googleusercontent.com/UgXx5IrjTmXnTgCs8-xyH14pC7oOODTZ4leckcBnUeC6mIkMjmU2OdiRIBCm2k7aaoOYyf3Mk8Va7-57OElDx5tbRl-ahXwEcE2-1H7XL7rSK_QWdpDuW5mCrOGtmGC-wOtm5ZECcSDI1VlPEbg3S3BK_jh3Ch3mJh04uBBlPRG2MHDSzhBKaFSJ1TJqqk5tloV--SsZfaAo9c0sCo6q3qA2_1-fnnWpXbyqsKN4Wur5q3cIBUnQWES7RkbiGNUuPJvrc5AhcfacGi1bMPg9SMiOe4Z-lvF4-3Gi3qQxS8_d9zZTy6UYCBfZihxCFIEIjx4GBx2W8gxPOrff1_rZHFCpl0skqpLhYlqKpskn1Jy0HHaaSROug32Fta8nVEQ33CWXoMh0jUcs-yY-SWqzDsJCX_NVuI8rtsv485B7263Vdt6iz-7tCHM0jvoxoeQqdkZOgcZRXPM8G2A97GhHmb-7kifkg5nk4u0UnYM_stLZKuaLw8ZPtQhpjcZomYp_OaYufVfaQ99Ug7fbTsAGaznk_xobmyPCkQ1ykTAd03WwDl9IyvubYaLyf7rBxfig3DRxhTE5Hb75opRZ93Dc6VL7jCmfE_BiZPSDAxXmyg394Rfw7x6fQHGqIIZ9VUiw8fRi3jT3NqF-8DPjO2it8NVam9AWksQdZ2AePgcLvbE-Bg=s972-no");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+} */
+
+

@@ -3,12 +3,39 @@
   <head>
     <title>Saasapp</title>
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">    
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class='container'>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <%= link_to root_path, class: "navbar-brand" do %>
+            Lisa D
+          <% end %>
+        </div>
+        <div class="collapse navbar-collapse" id="main-nav-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Brands", brands_path %></li>
+            <li><%= link_to "Gallery", gallery_path %></li>
+            <li><%= link_to "Contact", new_contact_path %></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </nav>
+    <div class='yield'>
+      <%= yield %>
+    </div>  
+    <img src='https://lh3.googleusercontent.com/XTZetId0podm0-29jeADeq7VoG5QX4hIYY-OXBxy-RwLI77nfcYTjpejRCdSM16-BGIcHMvQ4xexwEzUzE2-n2BqNdDbkAZHGyUzHbXUJI48f66u1HLQ8xHBxBZJKXL2Ons_WVeljFf0AK1nPMKTo2gAM1PZ-FkmHOtlWOMu6EsGeFQug5mM0bdvInaBlNsWbV8oWRZ2oAA_80KgCu7OmlXPzkMXTS54fn9idekNag8IvRiLXdxIdUUCsiS6T6NObFtcIF7SOuH7ljKZByyU2IkZUPjEGWx5CcxnYpBR7BZoFefWI6eDPow_Mx5_U_wx2XlyJjwFGtqRRXpMG1NBHWSVjOoWNEnz4s6KiT3HX87Ptwc5J12dsb6hczFCF0mi3BO0ulmtBfHUQe_gF-uZpWpd2gXxwGUeRCFat9TdF7rU3kFYnUriiyR4_1B7GWiPAMQC9m7FyeuPmCpOneyoQb30uKvkiztykqfUbD8dRtxXXzJ2BYTcD0EWrJK0DkTxrlven-aKPGpJXueEYlnbrVp-zi8-pTWDVll3Vd0OhmXtyfsONW_X94KKQzzREkZwvWd3jG5Hte-aNHzPVPVU6Q0hjOcOVjWAVYBMZQaJTMatQgNy2txBgd2ezthECC8Hca0JjW_EbiFxRW9tECyJUd44UIFRelQ58OdjZiWJuxYTcQ=w791-h758-no'>
+    </div>
   </body>
 </html>
