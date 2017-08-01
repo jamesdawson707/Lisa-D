@@ -31,6 +31,9 @@ gem 'jbuilder'
 # Use Twitter Bootstrap library for front-end UI and layout
 gem 'bootstrap-sass'
 
+#Use MetaTags for SEO
+gem 'meta-tags'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
