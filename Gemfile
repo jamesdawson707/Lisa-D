@@ -31,8 +31,7 @@ gem 'jbuilder'
 # Use Twitter Bootstrap library for front-end UI and layout
 gem 'bootstrap-sass'
 
-#Use MetaTags for SEO
-gem 'meta-tags'
+gem 'sitemap_generator'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
@@ -60,6 +59,3 @@ group :production do
   # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
   gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 end
-
-source "https://rubygems.org"
-ruby "2.4.1"
